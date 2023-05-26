@@ -1,3 +1,4 @@
+import ICategories from "../interfaces/categories";
 import api from "./axios";
 
 class DataService {
