@@ -14,9 +14,9 @@ function App() {
   return (
     <div className="App">
       <Categories onSelect={(category: string) => setCategorySelected(category)} categorySelected={categorySelected} setCatSelect={setCategorySelected}/>
-      <Ingredients/>
-      <Areas/>
-      <Meals categorySelected={categorySelected}/>
+      <Ingredients onSelect={(ingredient:string) => setIngredientSelected(ingredient)} selectedIngredient={ingredientSelected} setIngredientSelect={setIngredientSelected}/>
+      <Areas onSelect={(area:string) => setAreaSelected(area)} selectedArea={areaSelected} setAreaSelected={setAreaSelected}/>
+      <Meals categorySelected={categorySelected} ingredientSelected={ingredientSelected} areaSelected={areaSelected}/>
     </div>
   );
 }
