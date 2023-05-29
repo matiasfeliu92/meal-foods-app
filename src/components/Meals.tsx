@@ -63,13 +63,26 @@ const Meals = ({
     return (
       <div className="container w-100">
       <div className="row">
-        <div className="mt-12">
-          <h1>select one category or one ingredient or one area</h1>
+        <div className="mt-12 justify-content-center text-center">
+          <h1>Select one category or one ingredient or one area</h1>
         </div>
       </div>
     </div>
     )
   }
+
+  if(selectedData === null) {
+    return (
+      <div className="container w-100">
+      <div className="row">
+        <div className="mt-12">
+          <h1>Not meals were found</h1>
+        </div>
+      </div>
+    </div>
+    )
+  }
+
   return (
     <div className="container w-100">
       <div className="row">
