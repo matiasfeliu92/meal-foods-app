@@ -24,8 +24,7 @@ const Meals = ({
 
   useEffect(() => {
     if (categorySelected !== "") {
-      dataService
-        .filterByCategories(categorySelected)
+      dataService.filterByCategories(categorySelected)
         .then((res) => {
           setSelectedData(res.data.meals);
         })
@@ -33,10 +32,9 @@ const Meals = ({
           console.log(err);
         });
     }
-
+  
     if (ingredientSelected !== "") {
-      dataService
-        .filterByIngredients(ingredientSelected)
+      dataService.filterByIngredients(ingredientSelected)
         .then((res) => {
           setSelectedData(res.data.meals);
         })
@@ -44,10 +42,9 @@ const Meals = ({
           console.log(err);
         });
     }
-
+  
     if (areaSelected !== "") {
-      dataService
-        .filterByAreas(areaSelected)
+      dataService.filterByAreas(areaSelected)
         .then((res) => {
           setSelectedData(res.data.meals);
         })
@@ -56,7 +53,7 @@ const Meals = ({
         });
     }
   }, [categorySelected, ingredientSelected, areaSelected]);
-
+  
   console.log(selectedData);
 
   if(categorySelected === "" && ingredientSelected === "" && areaSelected === "") {
