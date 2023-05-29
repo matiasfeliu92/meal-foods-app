@@ -31,8 +31,8 @@ const Areas = ({selectedArea, onSelect, setAreaSelected}: Props) => {
     }
 
   return (
-    <div>
-      <h3>select one area</h3>
+    <div className="text-center">
+      <h3>Select one area</h3>
       <select onChange={handleAreaChange}>
         {areas.length > 0 &&
           areas.map((area) => (

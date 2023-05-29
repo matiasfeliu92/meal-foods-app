@@ -32,8 +32,8 @@ const Ingredients = ({selectedIngredient, onSelect, setIngredientSelect}: Props)
   }
 
   return (
-    <div>
-      <h3>select one ingredient</h3>
+    <div className="text-center">
+      <h3>Select one ingredient</h3>
       <select onChange={handleIngredientChange}>
         {ingredients.length > 0 &&
           ingredients.map((ingredient) => (
