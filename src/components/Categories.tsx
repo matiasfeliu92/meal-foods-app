@@ -34,8 +34,8 @@ const Categories = ({categorySelected, onSelect, setCatSelect}: Props) => {
   }
 
   return (
-    <div>
-      <h3>select one category</h3>
+    <div className="text-center">
+      <h3>Select one category</h3>
       <select onChange={handleCategoryChange}>
         {categories.length > 0 &&
           categories.map((category) => (

@@ -1,0 +1,15 @@
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+
+.cards {
+    width: 25%;
+    height: auto;
+}
